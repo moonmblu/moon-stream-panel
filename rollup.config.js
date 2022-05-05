@@ -2,6 +2,7 @@ import html from "@rollup/plugin-html";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import replace from "@rollup/plugin-replace";
+import styles from "rollup-plugin-styles";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -26,7 +27,10 @@ export default {
   plugins: [
     typescript(),
     nodeResolve(),
-    html(),
+    html({
+      title: process.env.TITLE
+    }),
+    styles(),
     replace({
       preventAssignment: true,
       ENV: env(),

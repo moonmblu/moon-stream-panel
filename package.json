@@ -6,12 +6,16 @@
     "@rollup/plugin-typescript": "^8.3.2",
     "dotenv": "^16.0.0",
     "rollup": "^2.71.1",
+    "rollup-plugin-styles": "^4.0.0",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4"
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.21.0",
-    "preact": "^10.7.1"
+    "moon-ui": "git+https://github.com/moonmblu/moon-ui.git",
+    "moon-ui-scss": "git+https://github.com/moonmblu/marxathome-scss.git",
+    "preact": "^10.7.1",
+    "sass": "^1.51.0"
   },
   "name": "moon-stream-panel",
   "version": "1.0.0",
