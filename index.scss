@@ -18,5 +18,7 @@ body {
 }
 
 pre {
+    max-width: 90vw;
     color: $linen;
+    overflow-x: auto;
 }
