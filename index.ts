@@ -1,9 +1,7 @@
 import { render, h } from "preact";
 import { App } from "./panel";
 
-declare const ENV: { [key: string]: string };
 
-const { LOGIN_URL } = ENV;
 
 function getUserData() {
   const href = new URL(window.location.href);

@@ -29,6 +29,7 @@ export const App = memo(function ({
   }
 
   if (loading) {
+    setTimeout(() => setLoading(false), 1000)
     return <Loader />;
   }
 
