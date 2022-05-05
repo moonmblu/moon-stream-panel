@@ -8,7 +8,7 @@ function redirectToLogin(logout?: boolean) {
   if (logout) {
     url.searchParams.set("logout", logout.toString());
   }
-  url.searchParams.set("redirectApp", window.location.href);
+  url.searchParams.set("redirectApp", "panel");
   window.location.replace(url.toString());
 }
 
