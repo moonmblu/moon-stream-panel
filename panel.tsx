@@ -25,6 +25,7 @@ export const App = memo(function ({
 
   if (!user || !token) {
     setTimeout(redirectToLogin, 500);
+    return <Loader />;
   }
 
   if (loading) {
